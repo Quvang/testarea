@@ -1,0 +1,378 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background: #030613;
+    min-height: 100vh;
+}
+
+main {
+    margin-top: 50px;
+}
+
+nav {
+    position: fixed;
+    left: 0; 
+    top: 0;
+    z-index: 10;
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    background-color: #030613;
+    border-right: solid 1px;
+    border-right-color: #fff;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    font-family: Montserrat;
+    font-weight: 300;
+    display: block;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li a:hover {
+    background-color: #ff006a;
+    transition-duration: 0.5s;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-weight: 300;
+    display: block;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+h3   {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#username {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+form {
+    padding-bottom: 20px;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.3;
+}
+
+#a1 {
+    color: #ff006a;
+}
+#a4 {
+    color: #ff006a;
+}
+
+.errors div {
+    background-color: #232530;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: hidden;  
+}
+
+.wrapper {
+    background-color: #232530;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px 50px 20px 50px;
+}
+.profilewrapper {
+    background-color: #232530;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 50px 20px 50px;
+}
+.dashwrapper {
+    background-color: #232530;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 50px 20px 50px;
+}
+.errorwrapper {
+    width: 50%;
+    margin-left: 20%;
+    padding: 20px 50px 20px 50px;
+    }
+    pre {
+        margin-right: 20px;
+    }
+    .notfound {
+        font-family: Montserrat;
+        font-weight: 300;
+        color: #fff;
+        padding: 0!important;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+}
+
+.timeline {
+    background-color: #232530;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 50px 20px 50px;
+}
+
+input[type=text], input[type=email], input[type=password], textarea, select{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: #353744;
+    opacity: 0.6;
+    padding: 18px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+  }
+  input[type=text], input[type=email], input[type=password] {
+      margin-bottom: 20px;
+  }
+  ::placeholder {
+      color: #fff;
+      opacity: 0.3;
+      font-size: 14px;
+  }
+  input[type=submit] {
+    width: 100%;
+    font-size: 20px;
+    background-color: #ff006a;
+    opacity: 0.5;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  } 
+  input[type=submit]:hover {
+    background-color: #ff006a;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.profileheader {
+    display: flex;
+    margin: 8px 0;
+    padding-bottom: 50px;
+}
+    .profileheader #username { 
+        float: left;  
+        display: flex; 
+    }
+    .followuser {
+        float: left; 
+        margin-left: 10px; 
+        margin-bottom: 5px;
+    }
+    #followbtn {
+        font-size: 14px;
+        background-color: #ff006a;
+        opacity: 0.5;
+        color: #ffffff;
+        padding: 5px 5px;
+        border: none;
+        cursor: pointer;
+    }
+        #followbtn:hover {
+            background-color: #ff006a;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+    .profile_top {
+        margin-left: 20px;
+        float: right;
+    }
+    .profile_mid {
+        margin-bottom: 5px;
+    }
+    .profile_bot {
+        margin-bottom: 5px;
+    }
+    .follow {
+        display:inline-block;
+    }
+    .follow li, #count {
+        float: left;
+        padding: 5px 5px 5px 0px;
+        font-size: 14px;
+        opacity: 0.5;
+    }
+    #bio {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: #fff;
+}
+.theme .profilewrapper {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.7;
+}
+    .sliderplaceholder {
+        float: right;
+    }
+    #theme {
+        float: left;
+        margin-bottom: 0;
+        font-size: 20px;
+}
+
+#postYadda {
+    width: 40%;
+    font-size: 20px;
+    background-color: #ff006a;
+    opacity: 0.5;
+    color: #ffffff;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  } 
+  #postYadda:hover {
+    background-color: #ff006a;
+    opacity: 1;
+    transition: 0.5s;
+    }
+    #useravatar {
+        float: left;
+        margin: 8px 0;
+    }
+    #useravatar-profile {
+        float: left;
+        width: 50%;
+        height: auto;
+    }
+        .container {
+            position: relative;
+            cursor: pointer;
+            /*float: left;*/
+            width: 50%;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 50%;
+            opacity: 0;
+        }
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        .text {
+            color: #fff;
+            font-size: 14px;
+            position: absolute;
+            padding: 5px;
+            background-color: #ff006a;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);   
+            text-align: center;
+        }
+    #charcount {
+        font-size: 14px;
+        margin-bottom: 5px;
+        color: #fff; 
+    }
+    #yaddatxtarea {
+        float: right;
+        height: 120px;
+        width: 80%;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    #posts {
+        margin: 0 auto;
+        padding: 18px 20px;
+        background-color: #353744;
+        opacity: 0.6;
+        margin-bottom: 20px;
+    }
+
+.file-upload > input {
+    display: none;
+}
+    .file-upload img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 20px;
+        opacity: 0.5;
+        color: #ffffff;
+        margin: 8px 0;
+        
+    }
+
+.bot {
+    text-align: center;
+}
+
+#copyright {
+    font-size: 14px;
+    border-top: 1px solid #fff;
+    opacity: 0.3;
+    padding: 14px 30px;
+
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+    #useravatar {
+      width: 20%;
+      height: 20%; 
+    }
+    #yaddatxtarea {
+        width: 80%;
+      }
+  }
